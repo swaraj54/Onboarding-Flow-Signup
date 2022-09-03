@@ -9,10 +9,10 @@ import FourthStep from './components/FourthStep';
 import pic from './Eden.png';
 
 const App = () => {
-  const {currentStep , finalData,setStep} = useContext(MultiStepContext);
+  const {currentStep } = useContext(MultiStepContext);
 
   function showStep(step){
-    switch(step){
+    switch (step) {
       case 1 : 
       return <FirstStep />
       case 2 : 
@@ -21,6 +21,8 @@ const App = () => {
       return <ThirdStep />
       case 4 :
       return <FourthStep />
+      default:
+        return
     }
   }
   return (

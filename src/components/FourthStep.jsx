@@ -1,11 +1,11 @@
 import React,{useContext} from 'react'
-import {Button,TextField,Typography} from '@mui/material';
+import {Button,Typography} from '@mui/material';
 import { MultiStepContext } from '../StepContext'; 
 import CheckCircleIcon from '@mui/icons-material/CheckCircle';
 
 const ThirdStep = () => {
     
-    const {setStep,userData, setUserData, submitData } = useContext(MultiStepContext);
+    const {userData, submitData } = useContext(MultiStepContext);
   return (
     <div>
     <div>   
@@ -18,7 +18,7 @@ const ThirdStep = () => {
     </div>
   
     <div>
-        <Button style={{ height:"35px", width:"70%", marginTop:"10px", backgroundColor:'#664de5',fontSize: '11px',  textTransform: 'none', width:"90%" }} variant="contained" onClick={submitData}  >Launch Eden</Button>
+        <Button style={{ height:"35px", marginTop:"10px", backgroundColor:'#664de5',fontSize: '11px',  textTransform: 'none', width:"90%" }} variant="contained" onClick={submitData}  >Launch Eden</Button>
         </div>
     </div>
   )
