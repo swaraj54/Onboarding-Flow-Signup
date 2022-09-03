@@ -12,7 +12,7 @@ const ThirdStep = () => {
       <div >
     <CheckCircleIcon sx={{ height:'60px', width:'60px', color :'#664de5', marginBottom:'5%' }} />
         </div> 
-    <Typography style={{fontSize:"23px", fontWeight:'bold', marginBottom:'2%' }} >Congrulations, Swaraj!</Typography>
+    <Typography style={{fontSize:"23px", fontWeight:'bold', marginBottom:'2%' }} >Congrulations, {userData.firstname}!</Typography>
     <Typography style={{fontSize:"12px", color: 'grey', marginBottom:'2%' }}  >You have complted onboarding, you can start using the Eden!</Typography>
     
     </div>
